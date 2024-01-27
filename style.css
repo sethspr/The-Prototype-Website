@@ -1,6 +1,26 @@
-body {
-    background: lightgrey;
-}
+html, body {
+    height: fit-content;
+    min-height: fit-content;
+  }
+  
+  body {
+    background: url(images/Background/Chili-Peppers.jpeg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+  }
+  
+  #wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  
+  #content {
+    padding: 40px;
+    background: rgba(255,255,255,.85);
+  }
 
 h1 {
     text-align: center;
@@ -10,46 +30,107 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: lightslategray;
 }
 
-#burger-container{
-    position: relative;
-    margin: 40px auto;
-    width: 100px;
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    padding-top: 30px;
 }
 
-#burger{
+nav {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+  }
+
+nav a {
+    float: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    background: lightslategray; 
+    border-radius: 10px; 
+  }
+
+img {
+    width: 500px;
+    height:300px;
+    border-radius: 20px;
+}
+
+#hot-sauce-favorites{
+    align-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+#hot-sauce-favorites > p {
+    width: 800px;
+    padding: 10px;
+    margin: 20px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+#question-container {
+    align-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: lightslategray;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
     cursor: pointer;
-    display: block;
-}
-
-#burger span {
-    background: #eee;
-    display: block;
-    width: 100px;
-    height: 14px;
-    margin-bottom: 10px;
+    border-radius: 10px; 
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #6a9cbd;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
     position: relative;
-    top: 0;
-    transition: all ease-in-out 0.4s;
-}
-
-#burger-container.open span:nth-child(2),
-#burger-container.open span:nth-child(3){
-    width: 0;
-    opacity: 0;
-}
-
-
-#burger-container.open span:nth-child(4){
-    transform: rotate(45deg);
-    top: -36px;
-}
-
-#burger-container.open span:nth-child(1){
-    transform: rotate(-45deg);
-    top: 36px;
-}
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px; 
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}

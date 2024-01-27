@@ -3,20 +3,52 @@
   <head>
     <meta charset=""utf-8">
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javscript" src="script.js"></script>
     <title>The Prototype Website</title>
+    <script type="text/javascript" src="script.js"></script>
   </head>
+  
   <body>
-    <h1>The Prototype Website</h1>
-    <h2>by Seth Spring</h2>
-    <div id="burger-container">
-      <div id="burger">
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-      </a>
-    </div>
+
+    <div id="wrapper">
+
+      <div id="content">
+
+        <header>
+          
+          <h1>The Prototype Website</h1>
+          
+          <h2>by Seth Spring</h2>
+          
+          <nav>
+            <a href="#">Blog</a> 
+            <a href="#">Hot Sauces</a> 
+            <a href="#">About</a> 
+          </nav>
+        
+        </header>
+
+        <section id="hot-sauce-favorites">
+          
+          <figure>
+            <img src="images/Hot Sauce Image.jpeg" alt="Hot Sauce Image" title="Hot Sauce Favorites">
+          </figure>
+          
+          <p>The world of craft hot sauces from an amatuer enthusiast. Hot sauces are a passion of mine and I've been avidily collecting and tasting hot sauces from all over the country. At the height of my collection I had over 50 hot sauces and routinely did tastings with my friends and family. Here, we will review hot sauces from little known micro companies, mass produced hot sauces, and hot sauces pairings for your favorite foods!</p>
+        
+          <section id="question-container">
+            <label question="userAnswer">Select your spice tolerance for a hot sauce recommendation</label>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="https://elijahsxtreme.com/products/elijahs-original">Mild</a>
+                <a href="https://zabssauce.com/products/st-augustine-style-large">Medium</a>
+                <a href="https://hoffandpepper.com/collections/orderhoffsauce/products/hoffs-smoken-ghost-sauce">Hot</a>
+                <a href="https://www.torchbearersauces.com/product/garlic-reaper/">Extra Hot</a>
+                <a href="https://heatonist.com/products/the-last-dab-xperience-hot-ones-hot-sauce">Extreme</a>
+              </div>
+            </div>
+      </div>
+        
+    </div>  
   </body>
 </html>
